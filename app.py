@@ -28,12 +28,16 @@ def get_shorten_url(request, code):
 
 
 def shorten(url):
-    count = redis.get(KEY_URL_COUNT)
-    redis.incr(KEY_URL_COUNT)
-    code = from_base62(count.decode('u8'))
-    code = to_base62(code)
-    redis.set(URL_PREFIX + url, code)
-    redis.set(SHORT_PREFIX + code, url)
+    code = redis.get(URL_PREFIX + url)
+    if code:
+        code = code.decode('u8')
+    else:
+        count = redis.get(KEY_URL_COUNT)
+        redis.incr(KEY_URL_COUNT)
+        code = from_base62(count.decode('u8'))
+        code = to_base62(code)
+        redis.set(URL_PREFIX + url, code)
+        redis.set(SHORT_PREFIX + code, url)
     return {
         'result': 'success',
         'shorten': get_shorten_url(request, code),
