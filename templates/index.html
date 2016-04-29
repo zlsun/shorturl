@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<p>请输入要缩短的URL:</p>
+<form method="POST" action="/">
+  <input id="url" name="url" type="text">
+  <button class="btn" type="submit">缩短</button>
+</form>
+{% endblock body%}
