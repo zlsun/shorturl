@@ -3,8 +3,9 @@
 
 A simple URL shortening service.
 
-# Dependencies
+# Requirements
 
+- Linux
 - Python 3
 - Redis
 
