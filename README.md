@@ -26,7 +26,10 @@ Finally, open `http://127.0.0.1:5000/` in your browser.
 
 ## Screenshots
 
+Home:
 ![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/1.png)
+Result:
 ![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/2.png)
+Debug:
 ![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/3.png)
 
