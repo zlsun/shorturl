@@ -33,4 +33,6 @@ Result:
 ![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/2.png)
 Debug:
 ![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/3.png)
+404:
+![](https://raw.githubusercontent.com/zlsun/screenshots/master/shorturl/4.png)
 
